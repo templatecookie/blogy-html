@@ -392,9 +392,11 @@ Version      : 1.0
   .banner-content-main h4 {
     font-size: 32px;
   }
-  .banner {
-    background-color: #e5e5e5 !important;
-    background-image: none !important;
+  .banner-content-main {
+    padding: 30px 20px;
+  }
+  .slick-dots li button::before {
+    background-color: white !important;
   }
   .banner-slider {
     height: auto;
@@ -432,9 +434,11 @@ Version      : 1.0
   .banner-content-main h4 {
     font-size: 32px;
   }
-  .banner {
-    background-color: #e5e5e5 !important;
-    background-image: none !important;
+  .banner-content-main {
+    padding: 30px 20px;
+  }
+  .slick-dots li button::before {
+    background-color: white !important;
   }
   .banner-slider {
     height: auto;
@@ -469,9 +473,11 @@ Version      : 1.0
   .banner-content-main h4 {
     font-size: 32px;
   }
-  .banner {
-    background-color: #e5e5e5 !important;
-    background-image: none !important;
+  .banner-content-main {
+    padding: 30px 20px;
+  }
+  .slick-dots li button::before {
+    background-color: white !important;
   }
   .banner-slider {
     height: auto;
@@ -511,6 +517,9 @@ Version      : 1.0
   }
   .banner-slider {
     height: 90vh;
+  }
+  .slick-dots li button::before {
+    background-color: white !important;
   }
 }
 
