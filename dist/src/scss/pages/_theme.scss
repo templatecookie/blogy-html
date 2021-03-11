@@ -1,0 +1,458 @@
+::selection{
+    background-color: $activeText;
+    color: white;
+}
+// Section Padding Starts Here
+.section-padding{
+    padding: 100px 0px;
+}
+// Section Padding Ends Here
+
+// PlaceHolder CSS Starts Here
+::placeholder{
+    font-family: $defaultFont !important;
+}
+// PlaceHolder CSS Ends Here
+
+// Margin & Padding Starts Here
+.mt-25{
+   margin-top: 25px;
+}
+.my-250{
+    margin: 250px 0px;
+}
+// Margin & Padding Ends Here
+
+// Line CSS Starts Here
+.has-line{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background-color: $activeText;
+        height: 2px;
+        width: 24px;
+    }
+}
+// Line CSS Ends Here
+
+// Dot CSS Starts Here
+.dot{
+    background-color: $gray;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+// Dot CSS Ends Here
+
+// Buttons CSS Starts Here
+.btn-default{
+    height: 66px;
+    padding: 0px 40px;
+    background-color: $activeText;
+    color: white;
+    border-radius: 0px;
+    font-family: $defaultFont;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s all linear;
+    &:hover{
+        color: $black;
+    }
+    &-sm{
+        height: 50px;
+        padding: 0 22px;
+    }
+}
+.btn-link{
+    padding: 0; 
+    color: $black;
+    font-weight: 500;
+    font-family: $defaultFont;
+    font-size: 16px;
+    transition: 0.3s all linear;
+    svg{
+        margin-left: 8px;
+        color: $black;
+        transition: 0.3s all linear;
+    }
+    &:hover{
+        color: $activeText;
+        svg{
+            color: $activeText;
+        }
+    }
+}
+// Buttons CSS Ends Here
+
+// Social Links Starts Here
+.social-links{
+    a{
+        height: 40px;
+        width: 40px;
+        background-color: $defaultBg;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $black;
+        border: 1px solid transparent;
+        transition: 0.3s all linear;
+        &:hover{
+            color: $activeText;
+            border-color: $activeText;
+        }
+    }
+}
+// Social Links Ends Here
+
+// Header Starts Here
+header{
+    .navbar{
+        padding: 16px 0px;
+        .nav-item{
+            .active{
+                color: $activeText !important;
+            }
+            .nav-link{
+                color: $default;
+                font-family: $defaultFont !important;
+                font-size: 16px;
+                margin-right: 24px !important;
+                padding-left: 0;
+                padding-right: 0;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 0;
+                    background-color: $activeText;
+                    transition:0.3s all linear;
+                }
+                &.active::after,
+                &:hover::after{
+                    width: 100%;
+                }
+             }
+        } 
+        .header-searchbar{
+            position: relative;
+            input{
+                font-family: $defaultFont !important;
+                border: 2px solid transparent;
+                width: 312px;
+                height: 48px;
+                background-color: rgba($color: #F5F5F5, $alpha: 0.7);
+                padding-left: 45px;
+                transition: 0.3s all linear;
+                &:focus{
+                    border: 2px solid $activeText;
+                }
+            }
+            svg{
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                left: 16px;
+                color: #272343;
+            }
+        }
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+        border-color: $activeText;
+    }
+}
+// Header Ends Here
+
+//  Blog Item Starts Here
+.blog-item{
+    &-sm{
+        .blog-item-image{
+            width: 100%;
+        }
+        .blog-item-info{
+            max-width: 404px;
+            h5{
+                font-size: 28px;
+            }
+        }
+    }
+    &-image{
+        width: 100%;
+        a{
+            display: block;
+            img{
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &-info{
+        padding: 32px;
+        background-color: #F7F7F7;
+        max-width: 560px;
+        margin-top: -70px;
+        position: relative;
+        z-index: 1;
+        span.fs-6{
+            color: $black;
+            font-family: $defaultFont;
+            padding-left: 32px;
+        }
+        h5{
+            margin-bottom: 12px;
+            a{
+                color: $black;
+            }
+        }
+        &-release{
+            margin-bottom: 20px;
+            span{
+                font-size: 16px;
+                color: $gray;
+                font-family: $defaultFont;
+            }
+            .dot{
+                margin: 0 8px;
+            }
+        }
+        
+    }
+}
+//  Blog Item Ends Here
+
+// Post Feature Starts Here
+.post-feature{
+    padding: 24px;
+    background-color: rgba($color:  #F5F5F5, $alpha: 0.5);
+    span.fs-6{
+        font-family: "Poppins", sans-serif;
+        padding-left: 32px;
+        color: $black;
+    }
+    h6{
+        a{
+            color: $black;
+        }
+    }
+}
+// Post Feature Ends Here
+
+// Footer Starts Here
+footer{
+    background: #272343;
+    padding-top: 100px;
+    .footer{
+        &-info{
+            p{
+                margin-top: 16px;
+                color: rgba($color: #FFFFFF, $alpha: 0.6);
+            }
+        }
+        &-wizard{
+            h6{
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            a{
+                color: rgba($color: #FFFFFF, $alpha: 0.6);
+                margin-bottom: 10px;
+                display: block;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: $defaultFont;
+                transition: 0.3s all linear;
+                &:hover{
+                    color: white;
+                }
+            }
+            &-form{
+                display: flex;
+                align-items: center;
+                input{
+                    height: 50px;
+                    padding-left: 20px;
+                    border: 2px solid transparent;
+                    background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+                    border-radius: 0px;
+                    color: white;
+                    font-family: $defaultFont;
+                    width: 315px;
+                    margin-right: 8px;
+                    transition: 0.3s all linear;
+                    &:focus{
+                        border: 2px solid $activeText;
+                    }
+                }
+                ::placeholder{
+                    color: rgba($color: #FFFFFF, $alpha: 0.6);
+                }
+            }
+        }
+    }
+    .copy-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid rgba($color: white, $alpha: 0.5);
+        margin-top: 70px;
+        padding: 20px 0px;
+        p{
+            margin-bottom: 0;
+            color: rgba($color: #fff, $alpha: 0.6);
+            a{
+                color: rgba($color: #fff, $alpha: 0.6);
+                transition: 0.3s all linear;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+// Footer Ends Here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive
+@media (max-width: 991px){
+    header{
+        .navbar {
+            .header-searchbar{
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+    .blog-item{
+        height: auto;
+        overflow: hidden;
+        &-image{
+            width: 100%;
+        }
+        &-info{
+            padding: 20px;
+            max-width: 100%;
+            position: static;
+            margin-top: 0;
+            &-release{
+                margin-bottom: 10px;
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .blog-item-sm .blog-item-info{
+        max-width: 100%;
+    }
+    .blog-item-sm .blog-item-image{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .blog-item-sm .blog-item-info h5{
+        font-size: 24px;
+    }
+    .post-feature{
+        h6{
+            font-size: 24px;
+        }
+    }
+}
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .section-padding{
+        padding: 30px 0px;
+    }
+    .footer{
+        padding-top: 50px;
+        &-wizard{
+            margin-bottom: 20px;
+            h6{
+                margin-bottom: 10px !important;
+                font-size: 20px !important;
+            }
+            a{
+                font-size: 14px !important;
+            }
+            &-form{
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start !important;
+                input{
+                    width: 100% !important;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .copy-right{
+            margin-top: 20px;
+            flex-direction: column;
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .section-padding{
+        padding: 30px 0px;
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .section-padding{
+        padding: 30px 0px;
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-item-image a img{
+        width: 100%;
+    }
+    .section-padding{
+        padding: 40px 0px;
+    }
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section-padding{
+        padding: 50px 0px;
+    }
+}

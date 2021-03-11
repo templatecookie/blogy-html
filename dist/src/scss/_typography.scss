@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+.fs-5{
+    font-size: 18px !important;
+}
+.fs-6{
+    font-size: 16px !important;
+}
+
+// TypoGraphy Starts Here
+h3{
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 700;
+    font-family: $headingFonts;
+    color: $black;
+}
+h4{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: $headingFonts;
+    color: $black;
+}
+h5{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: $headingFonts;
+    color: $black;
+}
+h6{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: $headingFonts;
+    color: $black;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $defaultFont;
+}
+// TypoGraphy Ends Here
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 420px) {
+    h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    h4{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h5{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .fs-6{
+        font-size: 14px !important;
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    h4{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h5{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    h4{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h5{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    h3{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    h4{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h5{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    h4{
+        font-size: 36px !important;
+    }
+    h6,
+    h5{
+        font-size: 24px !important;
+    }
+}

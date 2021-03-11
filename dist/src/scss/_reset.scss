@@ -1,0 +1,20 @@
+// Reset CSS Starts Here
+* {
+    margin: 0;
+	padding: 0;
+	outline: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+img {
+	border: 0;
+	outline: 0;
+	max-width: 100%;
+    vertical-align: middle;
+}
+a{
+	text-decoration: none !important;
+}
+// Reset CSS Ends Here

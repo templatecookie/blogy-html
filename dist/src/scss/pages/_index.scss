@@ -1,0 +1,419 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Zakir Soft
+Template Name: Blogy HTML Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+// Heading Starts Here
+.heading {
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 112px;
+        height: 4px;
+        background-color: $activeText;
+    }
+}
+
+// Heading Ends Here
+
+// Latest Post Starts Here
+.latest-post-area {
+    background-color: $defaultBg;
+
+    .blog-item-info {
+        background: #FFFFFF;
+    }
+}
+
+// Latest Post Ends Here
+
+// All Post Starts Here
+.all-post-area {
+    background-color: $defaultBg;
+
+    .blog-item-info {
+        background: #FFFFFF;
+    }
+}
+
+.featured-category {
+    h6 {
+        font-size: 20px;
+    }
+
+    &-item {
+        margin-bottom: 8px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+
+        a {
+            background: #FFFFFF;
+            padding: 8px 18px;
+            font-family: $defaultFont;
+            color: $black;
+            font-size: 14px;
+            transition: 0.3s all linear;
+
+            &:hover {
+                background-color: $activeText;
+                color: white;
+            }
+        }
+    }
+}
+
+.all-tags {
+    margin-top: 24px;
+
+    h6 {
+        font-size: 20px;
+    }
+
+    &-list {
+        a {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(39, 35, 67, 0.05);
+            font-size: 16px;
+            font-family: $defaultFont;
+            color: $black;
+            transition: 0.3s all linear;
+
+            &:hover {
+                background-color: $activeText;
+                color: white;
+            }
+        }
+    }
+}
+
+// All Post Ends Here
+
+// Banner Starts Here
+.banner {
+    overflow: hidden;
+
+    &-slider {
+        height: 920px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-content {
+        &-main {
+            padding: 60px 30px;
+            background-color: #FFFFFF;
+
+            span.fs-6 {
+                padding-left: 32px;
+                font-family: "Poppins", sans-serif;
+                color: $black;
+            }
+
+            h4 {
+                margin-bottom: 12px;
+                font-size: 48px;
+
+                a {
+                    display: block;
+                    color: $black;
+                }
+            }
+
+            p {
+                color: $gray;
+                margin: 10px 0px 26px 0px;
+            }
+
+            .btn-default {
+                height: auto;
+                padding: 12px 29px;
+            }
+        }
+    }
+}
+
+.blog-date {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 16px;
+        color: $gray;
+        font-family: "Poppins", sans-serif;
+    }
+
+    &-start {
+        padding-right: 10px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            right: -2px;
+            width: 5px;
+            height: 5px;
+            background-color: $gray;
+            border-radius: 50%;
+        }
+    }
+
+    &-end {
+        padding-left: 10px;
+    }
+}
+
+// Slick SLider Customization Starts Here
+.slick-dots {
+    display: inline-block;
+    width: auto;
+    bottom: 18%;
+    left: 65px;
+
+    li {
+        button::before {
+            width: 10px;
+            height: 10px;
+            background-color: rgba($color: #FB743E, $alpha: 0.5);
+            border-radius: 50%;
+            color: transparent;
+        }
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: #FB743E;
+    color: transparent;
+}
+
+.slick-prev,
+.slick-next {
+    top: 80%;
+    height: 54px;
+    width: 54px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $black;
+}
+
+.slick-prev {
+    left: 0;
+    transition: 0.3s all linear;
+
+    &:hover::before {
+        color: white;
+    }
+}
+
+.slick-next {
+    left: 155px;
+    transition: 0.3s all linear;
+
+    &:hover::before {
+        color: white;
+    }
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-color: $activeText;
+}
+
+// Slick SLider Customization Ends Here
+// Banner Ends Here
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .heading {
+        margin-bottom: 30px;
+    }
+
+    .all-tags-list {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .banner-content-main h4 {
+        font-size: 32px;
+    }
+
+    .banner {
+        background-color: #e5e5e5 !important;
+        background-image: none !important;
+    }
+
+    .banner-slider {
+        height: auto;
+        padding: 30px 0px 60px 0px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 95%;
+    }
+
+    .slick-prev {
+        left: 10%;
+    }
+
+    .slick-next {
+        right: 10% !important;
+        left: auto;
+    }
+
+    .slick-dots {
+        bottom: 2%;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .slick-list {
+        margin-bottom: 30px;
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .heading {
+        margin-bottom: 30px;
+    }
+
+    .all-tags-list {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .banner-content-main h4 {
+        font-size: 32px;
+    }
+
+    .banner {
+        background-color: #e5e5e5 !important;
+        background-image: none !important;
+    }
+
+    .banner-slider {
+        height: auto;
+        padding: 30px 0px 60px 0px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 95%;
+    }
+
+    .slick-prev {
+        left: 10%;
+    }
+
+    .slick-next {
+        right: 10% !important;
+        left: auto;
+    }
+
+    .slick-dots {
+        bottom: 2%;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .slick-list {
+        margin-bottom: 30px;
+    }
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .heading {
+        margin-bottom: 30px;
+    }
+
+    .banner-content-main h4 {
+        font-size: 32px;
+    }
+
+    .banner {
+        background-color: #e5e5e5 !important;
+        background-image: none !important;
+    }
+
+    .banner-slider {
+        height: auto;
+        padding: 30px 0px 60px 0px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 95%;
+    }
+
+    .slick-prev {
+        left: 10%;
+    }
+
+    .slick-next {
+        right: 10% !important;
+        left: auto;
+    }
+
+    .slick-dots {
+        bottom: 2%;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .slick-list {
+        margin-bottom: 30px;
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .heading {
+        margin-bottom: 40px;
+    }
+
+    .slick-list {
+        padding-bottom: 120px;
+    }
+
+    .banner-content-main h4 {
+        line-height: 56px;
+    }
+
+    .banner-slider {
+        height: 90vh;
+    }
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    .all-tags-list {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}

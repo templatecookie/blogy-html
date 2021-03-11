@@ -1,0 +1,87 @@
+//  Search Area Starts Here
+.search-area{
+    padding: 150px 0px 100px 0px;
+    background-color: $defaultBg;
+    h4{
+        margin-bottom: 30px;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-input{
+        position: relative;
+        input{
+            padding-left: 68px;
+            height: 66px;
+            width: 770px;
+            border: 2px solid transparent;
+            font-family: $defaultFont;
+            margin-right: 8px;
+            transition: 0.3s all linear;
+            &:focus{
+                border: 2px solid $activeText;
+            }
+        }
+        svg{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 30px;
+            color: $black;
+        }
+    }
+}
+//  Search Area Ends Here
+
+
+
+// Responsive
+// extra Small devices 420px
+@media (max-width: 991px) {
+    .search-area{
+        padding: 30px 0px;
+        .form{
+            flex-direction: column;
+            align-items: flex-start;
+            .btn-default{
+                height: 55px;
+                width: 100%;
+            }
+        }
+        &-input{
+            width: 100%;
+            margin-bottom: 15px;
+            input{
+                width: 100% !important;
+                margin-right: 0;
+                height: 60px;
+            }
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+// large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    footer .footer-wizard-form{
+        flex-direction: column;
+        align-items: flex-start !important;
+        input{
+            margin-bottom: 15px;
+        }
+    }
+}
