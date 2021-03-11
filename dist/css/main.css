@@ -1192,8 +1192,9 @@ Version      : 1.0
 }
 
 .social-links a:hover {
-  color: #FB743E;
+  color: white;
   border-color: #FB743E;
+  background-color: #FB743E;
 }
 
 header .navbar {

@@ -103,8 +103,9 @@
         border: 1px solid transparent;
         transition: 0.3s all linear;
         &:hover{
-            color: $activeText;
+            color: white;
             border-color: $activeText;
+            background-color: $activeText;
         }
     }
 }
