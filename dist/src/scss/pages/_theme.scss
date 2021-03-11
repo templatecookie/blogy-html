@@ -238,14 +238,31 @@ header{
 .post-feature{
     padding: 24px;
     background-color: rgba($color:  #F5F5F5, $alpha: 0.5);
+    transition: 0.3s all linear;
+    &:hover{
+        background-color: $activeText;
+        .dot,
+        .has-line::after{
+            background-color: white;
+        }
+        .btn-link svg,
+        .btn-link,
+        span,
+        h6 a,
+        span.fs-6{
+            color: white;
+        }
+    }
     span.fs-6{
         font-family: "Poppins", sans-serif;
         padding-left: 32px;
         color: $black;
+        transition: 0.3s all linear;
     }
     h6{
         a{
             color: $black;
+            transition: 0.3s all linear;
         }
     }
 }

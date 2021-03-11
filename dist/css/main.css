@@ -1337,16 +1337,39 @@ header .navbar-toggler:focus {
 .post-feature {
   padding: 24px;
   background-color: rgba(245, 245, 245, 0.5);
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.post-feature:hover {
+  background-color: #FB743E;
+}
+
+.post-feature:hover .dot,
+.post-feature:hover .has-line::after {
+  background-color: white;
+}
+
+.post-feature:hover .btn-link svg,
+.post-feature:hover .btn-link,
+.post-feature:hover span,
+.post-feature:hover h6 a,
+.post-feature:hover span.fs-6 {
+  color: white;
 }
 
 .post-feature span.fs-6 {
   font-family: "Poppins", sans-serif;
   padding-left: 32px;
   color: #272343;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
 }
 
 .post-feature h6 a {
   color: #272343;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
 }
 
 footer {
