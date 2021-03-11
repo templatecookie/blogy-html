@@ -1127,8 +1127,8 @@ Version      : 1.0
 
 .dot {
   background-color: #6D7280;
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -1161,15 +1161,11 @@ Version      : 1.0
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
 }
 
 .btn-link svg {
   margin-left: 8px;
   color: #272343;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
 }
 
 .btn-link:hover {
@@ -1178,6 +1174,7 @@ Version      : 1.0
 
 .btn-link:hover svg {
   color: #FB743E;
+  margin-left: 10px;
 }
 
 .social-links a {
@@ -1274,12 +1271,17 @@ header .navbar-toggler:focus {
   border-color: #FB743E;
 }
 
+.blog-intro-area span.has-line a {
+  color: #272343;
+}
+
 .blog-item-sm .blog-item-image {
   width: 100%;
 }
 
 .blog-item-sm .blog-item-info {
-  max-width: 404px;
+  margin-top: -40px;
+  max-width: 397px;
 }
 
 .blog-item-sm .blog-item-info h5 {
@@ -1321,12 +1323,11 @@ header .navbar-toggler:focus {
 
 .blog-item-info h5 a {
   color: #272343;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
 }
 
 .blog-item-info h5 a:hover {
   color: #FB743E;
+  text-decoration: underline !important;
 }
 
 .blog-item-info-release {
@@ -1346,8 +1347,8 @@ header .navbar-toggler:focus {
 .post-feature {
   padding: 24px;
   background-color: rgba(245, 245, 245, 0.5);
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+  -webkit-transition: 0.1s all linear;
+  transition: 0.1s all linear;
 }
 
 .post-feature:hover {
@@ -1371,14 +1372,16 @@ header .navbar-toggler:focus {
   font-family: "Poppins", sans-serif;
   padding-left: 32px;
   color: #272343;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
 }
 
 .post-feature h6 a {
   color: #272343;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
+}
+
+.post-feature .btn,
+.post-feature .btn-default {
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
 }
 
 footer {
@@ -1487,6 +1490,9 @@ footer .copy-right p a:hover {
 }
 
 @media (max-width: 991px) {
+  .blog-item-sm .blog-item-info {
+    margin-top: 0;
+  }
   header .navbar .header-searchbar input {
     width: 100%;
   }

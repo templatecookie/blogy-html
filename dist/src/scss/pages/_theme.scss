@@ -42,8 +42,8 @@
 // Dot CSS Starts Here
 .dot{
     background-color: $gray;
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     display: inline-block;
 }
@@ -74,16 +74,15 @@
     font-weight: 500;
     font-family: $defaultFont;
     font-size: 16px;
-    transition: 0.3s all linear;
     svg{
         margin-left: 8px;
         color: $black;
-        transition: 0.3s all linear;
     }
     &:hover{
         color: $activeText;
         svg{
             color: $activeText;
+            margin-left: 10px;
         }
     }
 }
@@ -174,13 +173,19 @@ header{
 // Header Ends Here
 
 //  Blog Item Starts Here
+.blog-intro-area span.has-line{
+    a{
+        color: $black;
+    }
+}
 .blog-item{
     &-sm{
         .blog-item-image{
             width: 100%;
         }
         .blog-item-info{
-            max-width: 404px;
+            margin-top: -40px;
+            max-width: 397px;
             h5{
                 font-size: 28px;
             }
@@ -212,9 +217,9 @@ header{
             margin-bottom: 12px;
             a{
                 color: $black;
-                transition: 0.3s all linear;
                 &:hover{
                     color: $activeText;
+                    text-decoration: underline !important;
                 }
             }
         }
@@ -238,7 +243,7 @@ header{
 .post-feature{
     padding: 24px;
     background-color: rgba($color:  #F5F5F5, $alpha: 0.5);
-    transition: 0.3s all linear;
+    transition: 0.1s all linear;
     &:hover{
         background-color: $activeText;
         .dot,
@@ -257,13 +262,17 @@ header{
         font-family: "Poppins", sans-serif;
         padding-left: 32px;
         color: $black;
-        transition: 0.3s all linear;
+        // transition: 0.3s all linear;
     }
     h6{
         a{
             color: $black;
-            transition: 0.3s all linear;
+            // transition: 0.3s all linear;
         }
+    }
+    .btn,
+    .btn-default{
+        transition: 0s !important;
     }
 }
 // Post Feature Ends Here
@@ -344,27 +353,11 @@ footer{
 }
 // Footer Ends Here
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Responsive
 @media (max-width: 991px){
+    .blog-item-sm .blog-item-info{
+        margin-top: 0;
+    }
     header{
         .navbar {
             .header-searchbar{

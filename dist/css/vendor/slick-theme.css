@@ -88,7 +88,9 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f104";
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +108,10 @@
 }
 .slick-next:before
 {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+  
 }
 [dir='rtl'] .slick-next:before
 {
