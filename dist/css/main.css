@@ -1312,6 +1312,12 @@ header .navbar-toggler:focus {
 
 .blog-item-info h5 a {
   color: #272343;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.blog-item-info h5 a:hover {
+  color: #FB743E;
 }
 
 .blog-item-info-release {

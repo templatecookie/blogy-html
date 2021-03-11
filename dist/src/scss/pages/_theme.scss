@@ -212,6 +212,10 @@ header{
             margin-bottom: 12px;
             a{
                 color: $black;
+                transition: 0.3s all linear;
+                &:hover{
+                    color: $activeText;
+                }
             }
         }
         &-release{
