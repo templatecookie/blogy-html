@@ -111,21 +111,74 @@
 // Social Links Ends Here
 
 // Header Starts Here
-header{
-    .navbar{
-        padding: 16px 0px;
-        .nav-item{
-            .active{
-                color: $activeText !important;
-            }
-            .nav-link{
-                color: $default;
-                font-family: $defaultFont !important;
-                font-size: 16px;
-                margin-right: 24px !important;
-                padding-left: 0;
-                padding-right: 0;
-                position: relative;
+.header{
+    overflow: hidden !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+    // Mobile Menu Starts Here
+    .menu-btn{
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        z-index: 1;
+        &-lines,
+        &-lines::after,
+        &-lines::before{
+            width: 1.5rem;
+            height: 0.1rem;
+            background-color: $activeText;
+            transition: all 0.3s ease-in-out;
+        }
+        &-lines::after,
+        &-lines::before{
+            content: '';
+            position: absolute;
+        }
+        &-lines::after{
+            transform: translateY(-0.5rem);
+        }
+        &-lines::before{
+            transform: translateY(0.5rem);
+        }
+    }
+    // Animation
+    .menu-btn.open .menu-btn-lines{
+        transform: translateX(2rem);
+        background-color: transparent;
+    }
+    .menu-btn.open .menu-btn-lines::after{
+        transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    }
+    .menu-btn.open .menu-btn-lines::before{
+        transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    }
+    // Mobile Menu Ends Here
+
+    .main-menu{
+        display: flex;
+        align-items: center;
+        &-items{
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            li{
+                .active-item{
+                    color: $activeText !important;
+                }
+                a{
+                    padding-bottom: 10px;
+                    color: $default;
+                    font-family: $defaultFont !important;
+                    font-size: 16px;
+                    margin-right: 24px !important;
+                    transition: 0.3s all linear;
+                    position: relative;
                 &::after{
                     position: absolute;
                     content: '';
@@ -136,12 +189,16 @@ header{
                     background-color: $activeText;
                     transition:0.3s all linear;
                 }
-                &.active::after,
+                &:hover{
+                    color: $activeText;
+                }
+                &.active-item::after,
                 &:hover::after{
                     width: 100%;
                 }
-             }
-        } 
+                }
+            }
+        }
         .header-searchbar{
             position: relative;
             input{
@@ -165,12 +222,7 @@ header{
             }
         }
     }
-    .navbar-toggler:focus{
-        box-shadow: none;
-        border-color: $activeText;
-    }
 }
-// Header Ends Here
 
 //  Blog Item Starts Here
 .blog-intro-area span.has-line{
@@ -262,12 +314,10 @@ header{
         font-family: "Poppins", sans-serif;
         padding-left: 32px;
         color: $black;
-        // transition: 0.3s all linear;
     }
     h6{
         a{
             color: $black;
-            // transition: 0.3s all linear;
         }
     }
     .btn,
@@ -355,6 +405,44 @@ footer{
 
 // Responsive
 @media (max-width: 991px){
+    .menu-btn{
+        display: flex !important;
+        z-index: 55555 !important;
+    }
+    .main-menu{
+        z-index: 44444;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: $black;
+        transition: transform 0.3s ease-in-out;
+        &-items {
+            flex-direction: column;
+            justify-content: space-around;
+            li{
+                margin-bottom: 50px;
+                width: 100%;
+                height: 100%;
+                a{
+                    color: #fff !important;
+                    font-size: 5vh !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+    }
+    .main-menu.open{
+        transform: translateX(0);
+    }
     .blog-item-sm .blog-item-info{
         margin-top: 0;
     }
