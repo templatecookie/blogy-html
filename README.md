@@ -9,7 +9,7 @@ This project is a bootstrap version [Blogy Responsive HTML Template](http://echo
 
 Check the [Live Demo here](http://demo.echotemplate.com).
 
-![](screenshot.jpeg)
+![](dist/images/screenshot.jpeg)
 
 ## Credits
 - Design by coded by [Zakir Soft](https://zakirsoft.com)
