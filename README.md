@@ -3,7 +3,7 @@ FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place whe
 
 # [Blogy Responsive HTML Template](https://echotemplate.com)
 
-> Coming Soon Responsive HTML Template based on bootstrap framework v5.
+> Blogy Responsive HTML Template based on bootstrap framework v5.
 
 This project is a bootstrap version [Blogy Responsive HTML Template](https://www.echotemplate.com/templates/blogy-responsive-blog-html-template) designed with HTML & CSS.
 
