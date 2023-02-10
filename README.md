@@ -1,7 +1,7 @@
-# [lomeyolab.com](https://lomeyolab.com)
-FREE UI & HTML Templates for Designer and Developer. LomeyoLab is a place where a team of design & developers create beautiful templates. Visit [Echotemplate.com](https://echotemplate.com) for more updates.
+# [lomeyolabs.com](https://lomeyolabs.com)
+FREE UI & HTML Templates for Designer and Developer. Lomeyo Labs is a place where a team of design & developers create beautiful templates. Visit [lomeyolabs.com](https://lomeyolabs.com) for more updates.
 
-# [Blogy Responsive HTML Template](https://echotemplate.com)
+# [Blogy Responsive HTML Template](https://lomeyolabs.com)
 
 > Blogy Responsive HTML Template based on bootstrap framework v5.
 
