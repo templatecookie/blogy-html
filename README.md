@@ -11,6 +11,10 @@ Check the [Live Demo here](https://blogy-modern-blog.netlify.app/).
 
 ![](dist/images/screenshot.jpeg)
 
+## Framework & Technologies 
+- Bootstrap
+- 
+
 ## Credits
 - Design by coded by [templatecookie.com](https://templatecookie.com)
 
