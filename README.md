@@ -13,7 +13,7 @@ Check the [Live Demo here](https://blogy-modern-blog.netlify.app/).
 
 ## Framework & Technologies 
 - Bootstrap
-- 
+- scss
 
 ## Credits
 - Design by coded by [templatecookie.com](https://templatecookie.com)
