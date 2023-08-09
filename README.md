@@ -7,7 +7,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 Check the [Live Demo here](https://blogy-modern-blog.netlify.app/).
 
-![./dist/images/screenshot.jpeg](screenshot.png)
+![dist/images/screenshot.jpeg](screenshot.png)
 
 ## Pages List
 - Home (Landing Page)
