@@ -12,7 +12,7 @@ Check the [Live Demo here](https://blogy-modern-blog.netlify.app/).
 ![](dist/images/screenshot.jpeg)
 
 ## Credits
-- Design by coded by [Zakir Soft](https://zakirsoft.com)
+- Design by coded by [templatecookie.com](https://templatecookie.com)
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
